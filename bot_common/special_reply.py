@@ -5,12 +5,6 @@ import re
 from itertools import product
 import unicodedata
 
-from pathlib import Path
-import json
-def load_json(filename):
-    path = Path(__file__).parent / filename
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
 
 # 待ち時間設定
 base = 0.8
