@@ -59,6 +59,5 @@ async def icon_loop(
     """
 
     while True:
-        await change_icon(bot, icon_dir)
-
         await asyncio.sleep(7 * 24 * 60 * 60)
+        await change_icon(bot, icon_dir)
